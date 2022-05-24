@@ -1,0 +1,430 @@
+<html>
+<head>
+	<title>BD-Traveller</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewpoint" content="width-device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<style>
+
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 0px 0;
+    position: center;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+
+}
+
+
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</style>
+<body>
+
+
+
+
+<section class="header">
+	
+<div class="container">
+	<img src="image/travel_logo_1.png" style="float: left;" width="150" height="150">
+	
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="image/1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center; color:black; padding-top: 50px;">User Login Form</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+</div>
+
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<h1>TRAVEL WITH NO REGRETS</h1>
+<p>Cover The Earth Before It Covers You</p>
+<div class="input-group">
+	<input type="text" class="form-control" placeholder="search country or city">
+	<div class="input-group-append">
+		<button type="button" class="input-group-text btn"  >Search</button>
+		<!-- <a href="F:/Travel_agency_HTML-main/Travel_agency_HTML-main/m1.html"></a> -->
+	</div>  
+</section>
+
+
+<section class="features">
+	<h1>Featured Destination</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_9.jpg" height="240">
+					<div class="price">
+						<p>500rs</p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Mysore Zoo</h4>
+							<p>Mysore Zoo is a 157-acre zoo located near the palace in Mysore, India. It is one of the oldest and most popular zoos in India, and is home to a wide range of species. Mysore Zoo is one of the city's most popular attractions.</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Indira Nagar</span>
+								<span><i class="fa fa-sun-o"></i>1 days</span>
+								<span><i class="fa fa-moon-o"></i>1 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_10.jpg" height="240">
+					<div class="price">
+						<p>2000rs</p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Auroville</h4>
+							<p>Auroville is an experimental township in Viluppuram district, mostly in the state of Tamil Nadu, India, with some parts in the Union Territory of Pondicherry in India. It was founded in 1968 by Mirra Alfassa and designed by architect Roger Anger</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i> Viluppuram</span>
+								<span><i class="fa fa-sun-o"></i>2 days</span>
+								<span><i class="fa fa-moon-o"></i>1 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_11.jpg" height="250">
+					<div class="price">
+						<p>9000rs</p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Lakshadweep</h4>
+							<p>Lakshadweep is a tropical archipelago of 36 atolls and coral reefs in the Laccadive Sea, off the coast of Kerala, India. Not all of the islands are inhabited, and only a few are open to visitors (permits required).</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Lakshadweep</span>
+								<span><i class="fa fa-sun-o"></i>3 days</span>
+								<span><i class="fa fa-moon-o"></i>2 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+</div>
+</div>
+				
+
+</section>
+<section class="gallery">
+	<h1>Travelling  Gallery</h1>
+	<div class="container">
+		<div class="row">
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_4.jpg" width="100" height="180">
+				<h4>Mysore</h4>
+				</div>
+				<a href=m1.html>
+				<button>CLICK HERE</button>
+			</a>
+
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_6.jpg" width="150" height="180">
+				<h4>Pondicherry</h4>
+				</div>
+				<a href=m2.html>
+				<button>CLICK HERE</button>
+			</a>
+
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_7.jpg " width="150" height="180">
+				<h4>Mumbai</h4>
+				</div>
+				<a href=m3.html>
+				<button>CLICK HERE</button>
+			</a>
+
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_8.jpg" width="100" height="175">
+				<h4>Lakshdweep</h4>
+				</div>
+				<a href=m4.html>
+				<button>CLICK HERE</button>
+			</a>
+
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+		
+	</div>
+	
+</section>
+<section class="banner">
+	<div class="banner-highlights">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2> Get 50% for Premium Customer</h2>
+					<p>Book your tickets brfore December Month with this discount</p>
+				</div>
+							</div>
+		</div>
+		
+	</div>
+	
+</section>
+<section>
+	<div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Enquiry Form</h3>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group">
+                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="Comment" class="form-control" placeholder="Phone number *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="submit" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxRuKqm9I6NAIq1oo_fH8ACKi1LDUB0ClVw8czZXEbq6BXPutgENirEkEQc9a6lu-oTFw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</section>
+<section class="users-feedback">
+	<h1>User Review</h1>
+	<div class="container" >
+	<div class="row">
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Lokman Hossain</h5>
+				<small>mumbai</small>
+				
+			</div>
+			<img src="image/user.jpg">
+			
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Sangam</h5>
+				<small>Mysore</small>
+				
+			</div>
+			<img src="image/user_2.jpg">
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's average organization.</p>
+			
+				<h5>Mahesh</h5>
+				<small>Kerela</small>
+				
+			</div>
+			<img src="image/user_3.jpg">
+		</div>
+	</div>	
+	</div>
+	
+</section>
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="image/travel_logo_1.png" class="footer-logo">
+				<p>We provide high class service to our customer.</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Features</h4>
+				<p>Deals & Offers</p>
+				<p>Customer Reviews</p>
+				<p>cancelation policy</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Contact</h4>
+				<p> <i class="fa fa-phone-square"></i>+91 78229881784</p>
+				<p> <i class="fa fa-envelope"></i>shashikiran2442@gmail.com</p>
+				<p> <i class="fa fa-home"></i>Mysore,Karnataka</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Follow Us on</h4>
+				<p> <i class="fa fa-facebook-official"></i><a href="https://m.facebook.com/1524838106/" target="new">Facebook</a></p>
+				<p> <i class="fa fa-youtube-play"></i><a href="https://www.youtube.com/channel/UC5ZRN6M8cals5deC-bZliLA" target="new">Youtube</a></p>
+				<p> <i class="fa fa-twitter"></i><a href="https://kannadabudgettraveller.blogspot.com/?m=1" target="new">Twitter</a></p>
+			</div>
+			
+		</div><hr>
+	</div>
+</section>
+</body>
+</html>
